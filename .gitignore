@@ -25,3 +25,6 @@ Package.resolved
 # Fastlane / misc
 fastlane/report.xml
 *.log
+
+# Agent working files
+agent-tools/
