@@ -1,0 +1,34 @@
+{
+  "sourceLanguage" : "en",
+  "version" : "1.1",
+  "strings" : {
+    "CFBundleDisplayName" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Stiki" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Stiki" } },
+        "he" : { "stringUnit" : { "state" : "translated", "value" : "Stiki" } }
+      }
+    },
+    "NSPhotoLibraryUsageDescription" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Stiki reads the photos and videos you pick so it can cut out subjects and build stickers. Everything stays on your device." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Stiki читает выбранные фото и видео, чтобы вырезать объекты и собрать стикеры. Всё остаётся на устройстве." } },
+        "he" : { "stringUnit" : { "state" : "translated", "value" : "Stiki קורא את התמונות והסרטונים שתבחרו כדי לחתוך אובייקטים ולבנות מדבקות. הכול נשאר במכשיר." } }
+      }
+    },
+    "NSPhotoLibraryAddUsageDescription" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Stiki saves finished stickers to your photo library when you ask it to." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Stiki сохраняет готовые стикеры в медиатеку, когда вы об этом просите." } },
+        "he" : { "stringUnit" : { "state" : "translated", "value" : "Stiki שומר מדבקות מוכנות לספריית התמונות כשתבקשו." } }
+      }
+    },
+    "NSCameraUsageDescription" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Stiki uses the camera so you can shoot a photo and turn it into a sticker right away." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Stiki использует камеру, чтобы вы могли сразу снять фото и превратить его в стикер." } },
+        "he" : { "stringUnit" : { "state" : "translated", "value" : "Stiki משתמש במצלמה כדי שתוכלו לצלם תמונה ולהפוך אותה למדבקה מיד." } }
+      }
+    }
+  }
+}
