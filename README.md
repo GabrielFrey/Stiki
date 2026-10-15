@@ -15,7 +15,7 @@ Stiki is built against the iOS 26 Liquid Glass APIs. There is no account, no tra
 7. Fair pricing: generous free tier, Pro as a one-time purchase or yearly. No weekly plan.
 8. Privacy-first: App Privacy “Data Not Collected”, local storage, optional iCloud for Pro.
 
-Screenshots: add device captures under `docs/screenshots/` once you have a simulator build.
+App Store listing copy, review notes, and a submission checklist live in [`docs/appstore/`](docs/appstore/README.md). Public privacy, terms, and support pages are GitHub Pages-ready in [`docs/`](docs/index.html). Screenshots: run `scripts/capture-screenshots.sh` on a Mac (see [`docs/appstore/SCREENSHOT_PLAN.md`](docs/appstore/SCREENSHOT_PLAN.md)).
 
 ## Requirements
 
@@ -51,7 +51,18 @@ xcodebuild \
 
 If `iPhone 17` is not installed, list destinations with `xcodebuild -scheme Stiki -showdestinations` and substitute a simulator that is.
 
-The `Stiki` scheme runs `StikiTests` and `StikiUITests` and attaches `Configuration.storekit` for local StoreKit.
+The `Stiki` scheme runs `StikiTests` and `StikiUITests` and attaches `Configuration.storekit` for local StoreKit. That file is **not** copied into the Release app bundle.
+
+### Archive for App Store Connect (Mac + paid Apple Developer account)
+
+```bash
+export TEAM_ID=YOUR_10_CHAR_TEAM_ID
+./scripts/archive-app-store.sh
+```
+
+Details, export options, and upload notes: [`docs/appstore/ARCHIVE.md`](docs/appstore/ARCHIVE.md).
+
+Legal URLs default to `https://gabrielfrey.github.io/Stiki/` (privacy / terms / support). Enable GitHub Pages from the `docs/` folder or change `App/Support/LegalLinks.swift`.
 
 ### StikiCore on any Swift 6.2 host (including Linux)
 
@@ -131,14 +142,15 @@ flowchart LR
 
 ```
 project.yml                 # XcodeGen
-Configuration.storekit
+Configuration.storekit      # Debug / tests only
+Config/exportOptions.plist  # App Store export template
 Packages/StikiCore/         # domain + swift test
 App/                        # SwiftUI app
 MessagesExtension/          # iMessage sticker browser
 Tests/StikiTests/
 Tests/StikiUITests/
-docs/spec.md                # technical specification
-docs/TRACEABILITY.md        # requirement → files → tests
+docs/                       # spec, Pages legal site, appstore/
+scripts/                    # icons, screenshots, archive
 ```
 
 ## Roadmap (v1.1)
