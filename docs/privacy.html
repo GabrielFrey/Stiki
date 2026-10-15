@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stiki Privacy Policy</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header>
+    <p class="muted"><a href="index.html">Stiki</a></p>
+    <h1>Privacy Policy</h1>
+    <p class="muted">Effective 15 October 2026. Last reviewed against <a href="https://developer.apple.com/app-store/app-privacy-details/">Apple’s App Privacy details</a> and the app’s <code>PrivacyInfo.xcprivacy</code>.</p>
+    <p class="langs"><a href="#en">English</a> <a href="#ru">Русский</a> <a href="#he">עברית</a></p>
+  </header>
+  <main>
+    <section lang="en" id="en">
+      <h2>English</h2>
+      <p>Stiki is a sticker maker that runs on your iPhone or iPad. This policy describes what data, if any, we collect, how it is used, how long it is kept, and how you can request deletion. It applies to the Stiki iOS app, the Stiki iMessage extension, and these pages.</p>
+      <h2>What we collect</h2>
+      <p><strong>We do not collect personal data from Stiki.</strong> There is no Stiki account, no analytics SDK, no advertising SDK, and no crash reporter that sends data to us. The privacy manifest (<code>PrivacyInfo.xcprivacy</code>) sets <code>NSPrivacyTracking</code> to false and lists no collected data types.</p>
+      <p>Apple’s definition of “collect” is transmitting data off the device so that the developer or a third-party partner can access it for longer than it takes to service the request. Stiki does not do that.</p>
+      <h2>On-device processing</h2>
+      <ul>
+        <li>Photos, videos, Live Photos, camera frames, cutout masks, edit recipes, and rendered stickers are processed on the device with Vision, Core Image, and SwiftData.</li>
+        <li>The photo library and camera are used only when you pick or capture media. Purpose strings explain this in the permission dialogs.</li>
+        <li>UserDefaults, file timestamps, and disk-space APIs are used locally (privacy manifest reasons CA92.1, C617.1, E174.1).</li>
+      </ul>
+      <h2>Optional iCloud sync</h2>
+      <p>iCloud sync is off by default and available only with Stiki Pro. If you turn it on, your sticker library is stored in <em>your</em> private CloudKit database (<code>iCloud.com.stiki.app</code>). Apple operates iCloud. We do not have a server that reads that database. You can turn sync off in Settings. Deleting the app or the iCloud data for Stiki removes the synced copies from that container, subject to Apple’s iCloud retention.</p>
+      <p>Apple states that developers are not responsible for disclosing data collected by Apple. We still describe this toggle here so the policy is complete.</p>
+      <h2>Purchases</h2>
+      <p>Lifetime and yearly Stiki Pro purchases are processed by Apple. We never see payment card numbers. Apple’s App Privacy details say payment information entered outside the app, which the developer cannot access, does not need to be declared as collected by the developer.</p>
+      <h2>Export and other apps</h2>
+      <p>When you export a sticker or pack, you choose the destination (Photos, Files, share sheet, clipboard, iMessage, or another installed messenger). That hand-off is under your control. Stiki does not upload those files to us.</p>
+      <h2>Children</h2>
+      <p>Stiki is not directed at children and is not in the Kids Category. We do not knowingly collect data from anyone, including children.</p>
+      <h2>Retention, deletion, and consent</h2>
+      <p>On-device library data stays until you delete stickers, packs, or the app. There is no consent dialog for “collection” because we do not collect. To delete local data, delete stickers in the app or delete Stiki. To delete optional iCloud copies, turn off sync and remove Stiki data in iCloud Settings, or delete the app and the iCloud data for Stiki.</p>
+      <h2>Third parties</h2>
+      <p>We do not share Stiki user data with analytics tools, advertising networks, or other SDKs, because we do not receive that data. Apple provides StoreKit, iCloud, and the App Store under Apple’s terms.</p>
+      <h2>Contact</h2>
+      <p>Privacy questions: open an issue at the Stiki GitHub repository or replace this sentence with a dedicated email before you ship. Update this page if practices change. You can update App Store Connect privacy answers without submitting a new binary.</p>
+    </section>
+
+    <section lang="ru" id="ru">
+      <h2>Русский</h2>
+      <p>Stiki — приложение для стикеров на iPhone и iPad. В этой политике указано, какие данные (если они есть) мы собираем, как используем, сколько храним и как запросить удаление.</p>
+      <h2>Что мы собираем</h2>
+      <p><strong>Мы не собираем персональные данные из Stiki.</strong> Нет аккаунта Stiki, нет аналитики, нет рекламы и нет нашего crash-репортера. Манифест конфиденциальности не объявляет собранных типов данных и отключает tracking.</p>
+      <p>«Сбор» у Apple — это передача данных с устройства так, чтобы разработчик или партнёр могли получить к ним доступ дольше, чем нужно для выполнения запроса. Stiki этого не делает.</p>
+      <h2>Обработка на устройстве</h2>
+      <ul>
+        <li>Фото, видео, Live Photo, кадры камеры, маски, рецепты и готовые стикеры обрабатываются на устройстве.</li>
+        <li>Медиатека и камера используются только когда вы сами выбираете или снимаете материал.</li>
+      </ul>
+      <h2>Опциональная синхронизация iCloud</h2>
+      <p>Синхронизация выключена по умолчанию и доступна только в Stiki Pro. При включении библиотека хранится в вашей частной базе CloudKit. У нас нет сервера, который её читает. Выключить можно в Настройках; удаление приложения или данных iCloud для Stiki удаляет синхронизированные копии (с учётом политики Apple).</p>
+      <h2>Покупки</h2>
+      <p>Разовую и годовую покупки Pro проводит Apple. Мы не видим данные карты.</p>
+      <h2>Экспорт</h2>
+      <p>Экспорт — это ваш выбор назначения. Stiki не загружает эти файлы нам.</p>
+      <h2>Дети</h2>
+      <p>Приложение не предназначено для детей и не в категории Kids. Мы ни у кого сознательно данные не собираем.</p>
+      <h2>Хранение и удаление</h2>
+      <p>Локальные данные живут, пока вы не удалите стикеры, паки или приложение. Чтобы удалить копии iCloud, выключите синхронизацию и удалите данные Stiki в настройках iCloud.</p>
+      <h2>Контакт</h2>
+      <p>Вопросы о конфиденциальности: issue в репозитории Stiki или замените эту фразу на email до публикации.</p>
+    </section>
+
+    <section lang="he" id="he" dir="rtl">
+      <h2>עברית</h2>
+      <p>Stiki הוא יוצר מדבקות ל־iPhone ול־iPad. מדיניות זו מתארת אילו נתונים (אם בכלל) אנו אוספים, כיצד משתמשים בהם, כמה זמן שומרים אותם וכיצד לבקש מחיקה.</p>
+      <h2>מה אנחנו אוספים</h2>
+      <p><strong>איננו אוספים נתונים אישיים מ־Stiki.</strong> אין חשבון Stiki, אין SDK לניתוח או לפרסום, ואין מדווח קריסות ששולח אלינו מידע. מניפסט הפרטיות אינו מצהיר על סוגי נתונים שנאספים ומכבה מעקב.</p>
+      <p>אצל Apple, «איסוף» הוא העברת נתונים מחוץ למכשיר באופן שמאפשר למפתח או לשותף לגשת אליהם מעבר לזמן הנדרש לטיפול בבקשה. Stiki אינו עושה זאת.</p>
+      <h2>עיבוד במכשיר</h2>
+      <ul>
+        <li>תמונות, סרטונים, Live Photos, מצלמה, מסיכות, מתכוני עריכה ומדבקות מעובדים במכשיר.</li>
+        <li>ספריית התמונות והמצלמה בשימוש רק כשאתם בוחרים או מצלמים.</li>
+      </ul>
+      <h2>סנכרון iCloud אופציונלי</h2>
+      <p>הסנכרון כבוי כברירת מחדל וזמין רק ב־Stiki Pro. בהפעלה הספרייה נשמרת במסד CloudKit הפרטי שלכם. אין לנו שרת שקורא אותו. אפשר לכבות בהגדרות; מחיקת היישום או נתוני iCloud של Stiki מסירה את העותקים המסונכרנים, בכפוף למדיניות Apple.</p>
+      <h2>רכישות</h2>
+      <p>רכישות Pro החד-פעמית והשנתית עוברות דרך Apple. איננו רואים פרטי תשלום.</p>
+      <h2>ייצוא</h2>
+      <p>הייצוא הוא בחירה שלכם. Stiki אינו מעלה את הקבצים אלינו.</p>
+      <h2>ילדים</h2>
+      <p>היישום אינו מיועד לילדים ואינו בקטגוריית Kids. איננו אוספים במודע נתונים מאף אחד.</p>
+      <h2>שמירה ומחיקה</h2>
+      <p>נתונים מקומיים נשארים עד שתמחקו מדבקות, חבילות או את היישום. למחיקת עותקי iCloud: כבו סנכרון ומחקו את נתוני Stiki בהגדרות iCloud.</p>
+      <h2>יצירת קשר</h2>
+      <p>שאלות פרטיות: issue במאגר Stiki, או החליפו משפט זה באימייל לפני הפרסום.</p>
+    </section>
+  </main>
+  <footer>
+    <a href="terms.html">Terms of Use</a> · <a href="support.html">Support</a>
+  </footer>
+</body>
+</html>
