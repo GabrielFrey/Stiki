@@ -2,10 +2,16 @@ import StoreKit
 import SwiftUI
 
 /// Honest paywall. No fake trial, no weekly plan, no countdown.
+///
+/// Auto-renewable subscription copy follows Apple's published sign-up
+/// requirements (name, duration, content, full renewal price, restore) plus
+/// Privacy Policy and Terms of Use links required in the binary by
+/// Guideline 3.1.2.
 struct PaywallView: View {
     @Environment(\.stiki) private var environment
     @Environment(\.dismiss) private var dismiss
     @State private var error: StikiError?
+    @State private var showManageSubscriptions = false
 
     var body: some View {
         NavigationStack {
@@ -14,6 +20,8 @@ struct PaywallView: View {
                     header
                     features
                     products
+                    subscriptionTerms
+                    legalLinks
                     finePrint
                 }
                 .padding(24)
@@ -46,6 +54,7 @@ struct PaywallView: View {
                         .stikiGlassPanel()
                 }
             }
+            .manageSubscriptionsSheet(isPresented: $showManageSubscriptions)
         }
         .presentationDetents([.large])
         .task { await environment.purchases.refresh() }
@@ -104,6 +113,11 @@ struct PaywallView: View {
                             .foregroundStyle(.secondary)
                         Text(product.displayPrice)
                             .font(.title3.weight(.semibold))
+                        if product.id == StikiProductID.yearly.rawValue {
+                            Text("Billed \(product.displayPrice) once a year. Auto-renews until you cancel.")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.vertical, 8)
@@ -114,8 +128,41 @@ struct PaywallView: View {
         }
     }
 
+    private var subscriptionTerms: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Stiki Pro — Yearly")
+                .font(.subheadline.weight(.semibold))
+            Text("Auto-renewable subscription. Length: 1 year. Price: the yearly button above shows the amount billed in your storefront currency. Payment is charged to your Apple ID at confirmation. The subscription renews automatically unless you turn off auto-renew at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours prior to the end of the current period. Manage or cancel in Settings → Apple ID → Subscriptions, or tap Manage subscription below.")
+                .font(.footnote)
+                .foregroundStyle(.secondary)
+                .fixedSize(horizontal: false, vertical: true)
+            Button("Manage subscription") {
+                showManageSubscriptions = true
+            }
+            .buttonStyle(.glass)
+            .accessibilityHint("Opens Apple's subscription management sheet")
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(16)
+        .stikiGlassPanel()
+    }
+
+    private var legalLinks: some View {
+        HStack(spacing: 16) {
+            if let privacy = LegalLinks.privacy {
+                Link("Privacy Policy", destination: privacy)
+            }
+            if let terms = LegalLinks.terms {
+                Link("Terms of Use", destination: terms)
+            }
+        }
+        .font(.subheadline.weight(.semibold))
+        .frame(maxWidth: .infinity)
+        .accessibilityElement(children: .contain)
+    }
+
     private var finePrint: some View {
-        Text("No ads, no account, no weekly plan. Purchases are handled by Apple. Family Sharing is on.")
+        Text("No ads, no account, no weekly plan. Purchases are handled by Apple. Family Sharing is on. Restore purchases if you already bought Pro on this Apple ID.")
             .font(.footnote)
             .foregroundStyle(.secondary)
             .multilineTextAlignment(.center)

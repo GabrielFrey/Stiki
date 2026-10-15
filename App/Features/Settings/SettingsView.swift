@@ -14,6 +14,7 @@ struct SettingsView: View {
                 status
                 exportDefaults
                 privacy
+                legal
                 about
             }
             .navigationTitle("Settings")
@@ -96,6 +97,20 @@ struct SettingsView: View {
         Section("Privacy") {
             Text("Data Not Collected. Stickers are made on this device. There is no account and no tracker. Photos never leave the phone unless you export them or turn on iCloud sync.")
                 .font(.subheadline)
+        }
+    }
+
+    private var legal: some View {
+        Section("Legal") {
+            if let privacy = LegalLinks.privacy {
+                Link("Privacy Policy", destination: privacy)
+            }
+            if let terms = LegalLinks.terms {
+                Link("Terms of Use", destination: terms)
+            }
+            if let support = LegalLinks.support {
+                Link("Support", destination: support)
+            }
         }
     }
 
