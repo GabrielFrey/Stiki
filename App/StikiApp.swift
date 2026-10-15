@@ -11,7 +11,9 @@ struct StikiApp: App {
             RootTabView()
                 .environment(\.stiki, environment)
                 .environment(\.undoManager, UndoManager())
+                #if DEBUG
                 .task { await UITestSeeding.seedIfNeeded(in: environment) }
+                #endif
         }
         .modelContainer(environment.modelContainer)
     }

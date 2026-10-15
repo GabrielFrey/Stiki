@@ -1,13 +1,15 @@
+#if DEBUG
 import CoreGraphics
 import Foundation
 import ImageIO
 import StikiCore
 
-/// Deterministic library used only by UI tests.
+/// Deterministic library used only by Debug UI tests.
 ///
 /// PhotosPicker cannot be driven reliably, so the UI test launches with
 /// `-UITestSample` and this helper inserts three sample stickers in a pack
-/// that is WhatsApp-ready. Production launches never call it.
+/// that is WhatsApp-ready. The type is compiled out of Release, and
+/// `StikiApp` only calls it from a `#if DEBUG` task.
 enum UITestSeeding {
     static var isEnabled: Bool {
         ProcessInfo.processInfo.arguments.contains("-UITestSample")
@@ -76,3 +78,4 @@ enum SamplePNG {
         return data as Data
     }
 }
+#endif

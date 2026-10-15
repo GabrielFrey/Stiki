@@ -45,9 +45,6 @@ targets:
     platform: iOS
     sources:
       - path: App
-      - path: Configuration.storekit
-        buildPhase: resources
-        optional: false
     dependencies:
       - package: StikiCore
       - target: StikiMessages
@@ -131,6 +128,7 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.stiki.app.messages
         PRODUCT_NAME: Stiki
         SKIP_INSTALL: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: "iMessage App Icon"
     info:
       path: MessagesExtension/Resources/Info.plist
       properties:
