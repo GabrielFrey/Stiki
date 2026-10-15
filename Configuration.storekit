@@ -12,6 +12,16 @@
           "description" : "Unlimited packs, animated stickers, advanced outlines and filters, iCloud sync. Pay once, keep forever.",
           "displayName" : "Stiki Pro — One-Time",
           "locale" : "en_US"
+        },
+        {
+          "description" : "Безлимитные паки, анимация, продвинутые обводки и фильтры, iCloud. Один платёж навсегда.",
+          "displayName" : "Stiki Pro — навсегда",
+          "locale" : "ru"
+        },
+        {
+          "description" : "חבילות ללא הגבלה, מדבקות מונפשות, קווי מתאר ומסננים מתקדמים, iCloud. תשלום חד-פעמי.",
+          "displayName" : "Stiki Pro — חד-פעמי",
+          "locale" : "he"
         }
       ],
       "productID" : "com.stiki.pro.lifetime",
@@ -82,6 +92,16 @@
           "description" : "Everything in Stiki Pro",
           "displayName" : "Stiki Pro",
           "locale" : "en_US"
+        },
+        {
+          "description" : "Всё в Stiki Pro",
+          "displayName" : "Stiki Pro",
+          "locale" : "ru"
+        },
+        {
+          "description" : "הכול ב־Stiki Pro",
+          "displayName" : "Stiki Pro",
+          "locale" : "he"
         }
       ],
       "name" : "Stiki Pro",
@@ -101,6 +121,16 @@
               "description" : "Unlimited packs, animated stickers, advanced outlines and filters, iCloud sync. Billed yearly, cancel anytime.",
               "displayName" : "Stiki Pro — Yearly",
               "locale" : "en_US"
+            },
+            {
+              "description" : "Безлимитные паки, анимация, продвинутые обводки и фильтры, iCloud. Ежегодно, отмена в любой момент.",
+              "displayName" : "Stiki Pro — на год",
+              "locale" : "ru"
+            },
+            {
+              "description" : "חבילות ללא הגבלה, מדבקות מונפשות, קווי מתאר ומסננים מתקדמים, iCloud. חיוב שנתי, ביטול בכל עת.",
+              "displayName" : "Stiki Pro — שנתי",
+              "locale" : "he"
             }
           ],
           "productID" : "com.stiki.pro.yearly",

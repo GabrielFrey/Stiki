@@ -4225,6 +4225,226 @@
           }
         }
       }
+    },
+    "Billed %@ once a year. Auto-renews until you cancel.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Billed %@ once a year. Auto-renews until you cancel."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Списывается %@ раз в год. Автопродление, пока не отмените."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "חיוב %@ פעם בשנה. מתחדש אוטומטית עד הביטול."
+          }
+        }
+      }
+    },
+    "Stiki Pro — Yearly": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stiki Pro — Yearly"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stiki Pro — на год"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stiki Pro — שנתי"
+          }
+        }
+      }
+    },
+    "Auto-renewable subscription. Length: 1 year. Price: the yearly button above shows the amount billed in your storefront currency. Payment is charged to your Apple ID at confirmation. The subscription renews automatically unless you turn off auto-renew at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours prior to the end of the current period. Manage or cancel in Settings → Apple ID → Subscriptions, or tap Manage subscription below.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auto-renewable subscription. Length: 1 year. Price: the yearly button above shows the amount billed in your storefront currency. Payment is charged to your Apple ID at confirmation. The subscription renews automatically unless you turn off auto-renew at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours prior to the end of the current period. Manage or cancel in Settings → Apple ID → Subscriptions, or tap Manage subscription below."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Автопродлеваемая подписка. Срок: 1 год. Цена: кнопка «на год» выше показывает сумму в валюте вашего магазина. Оплата списывается с Apple ID при подтверждении. Подписка продлевается автоматически, если не отключить автопродление минимум за 24 часа до конца периода. Счёт списывается за продление в течение 24 часов до конца периода. Управление и отмена: Настройки → Apple ID → Подписки или «Управлять подпиской» ниже."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מנוי מתחדש אוטומטית. משך: שנה. מחיר: כפתור השנתי למעלה מציג את הסכום במטבע החנות שלכם. החיוב נעשה ל־Apple ID באישור. המנוי מתחדש אוטומטית אלא אם תכבו חידוש אוטומטי לפחות 24 שעות לפני סוף התקופה. החשבון מחויב על החידוש בתוך 24 השעות שלפני סוף התקופה. ניהול או ביטול ב־הגדרות ← Apple ID ← מנויים, או ב«ניהול מנוי» למטה."
+          }
+        }
+      }
+    },
+    "Manage subscription": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Manage subscription"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Управлять подпиской"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ניהול מנוי"
+          }
+        }
+      }
+    },
+    "Opens Apple's subscription management sheet": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opens Apple's subscription management sheet"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открывает системный экран управления подписками Apple"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "פותח את גיליון ניהול המנויים של Apple"
+          }
+        }
+      }
+    },
+    "Privacy Policy": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privacy Policy"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Политика конфиденциальности"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מדיניות פרטיות"
+          }
+        }
+      }
+    },
+    "Terms of Use": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terms of Use"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Условия использования"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "תנאי שימוש"
+          }
+        }
+      }
+    },
+    "Support": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Support"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поддержка"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "תמיכה"
+          }
+        }
+      }
+    },
+    "Legal": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legal"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Правовая информация"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "משפטי"
+          }
+        }
+      }
+    },
+    "No ads, no account, no weekly plan. Purchases are handled by Apple. Family Sharing is on. Restore purchases if you already bought Pro on this Apple ID.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No ads, no account, no weekly plan. Purchases are handled by Apple. Family Sharing is on. Restore purchases if you already bought Pro on this Apple ID."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Без рекламы, без аккаунта, без недельного тарифа. Покупки проводит Apple. Семейный доступ включён. Восстановите покупки, если Pro уже куплен на этом Apple ID."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "בלי פרסומות, בלי חשבון, בלי מסלול שבועי. הרכישות עוברות דרך Apple. שיתוף משפחתי פעיל. שחזרו רכישות אם כבר קניתם Pro ב־Apple ID הזה."
+          }
+        }
+      }
     }
   }
 }
