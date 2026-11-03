@@ -8,7 +8,7 @@ struct StikiApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RootTabView()
+            AdaptiveRootView()
                 .environment(\.stiki, environment)
                 .environment(\.undoManager, UndoManager())
                 #if DEBUG

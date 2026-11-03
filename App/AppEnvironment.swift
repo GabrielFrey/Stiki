@@ -21,6 +21,8 @@ final class AppEnvironment {
     let purchases: PurchaseStore
     let settings: AppSettings
     let isAppGroupAvailable: Bool
+    /// iPhone Duo / Flexibility pose; `.standardPhone` on regular iPhones.
+    let device: DevicePresentationModel
 
     var isPro: Bool { purchases.isPro }
 
@@ -31,8 +33,10 @@ final class AppEnvironment {
         subjectLifting: any SubjectLifting = VisionSubjectLiftingService(),
         webPEncoder: any WebPEncoding = ImageIOWebPEncoder(),
         purchases: PurchaseStore = PurchaseStore(),
-        settings: AppSettings = AppSettings()
+        settings: AppSettings = AppSettings(),
+        device: DevicePresentationModel = DevicePresentationModel()
     ) {
+        self.device = device
         self.modelContainer = modelContainer
         self.assetStore = assetStore
         self.isAppGroupAvailable = isAppGroupAvailable

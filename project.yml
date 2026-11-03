@@ -34,6 +34,9 @@ settings:
     SWIFT_TREAT_WARNINGS_AS_ERRORS: NO
   configs:
     Debug:
+      # iPhone Duo: when building with Xcode 27.1+ (iOS 27.1 SDK) append
+      # STIKI_DUO_SDK here and under Release to enable the real hinge and
+      # reserved-region APIs. See docs/duo-flexibility.md.
       SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
       SWIFT_OPTIMIZATION_LEVEL: "-Onone"
     Release:
