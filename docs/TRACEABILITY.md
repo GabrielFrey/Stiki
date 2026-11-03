@@ -36,3 +36,17 @@ Status: **C** complete in source, **P** partial (works with a documented fallbac
 - Host: Ubuntu 24.04, x86_64, **no Xcode**, **no `xcodebuild`**, **no XcodeGen**.
 - Swift **6.2** (official Ubuntu 24.04 tarball) used only for `Packages/StikiCore`.
 - App/extension sources were **syntax-parsed where the Linux toolchain could import the module**; they were **not** compiled for iOS.
+
+## iPhone Duo / Flexibility (Flex/pose) Mode
+
+| Requirement | Implementation | Tests / checks | Status |
+|---|---|---|---|
+| Pose model: standardPhone, closed, fullyOpen, book, tent, seated | `StikiCore/Layout/DevicePosture.swift` (`HingePose`, `PostureResolver`) | `DevicePostureTests` | Done (logic) |
+| Outer cover vs inner display layouts | `App/Features/Adaptive/AdaptiveRootView.swift` | Manual: `-StikiSimulatedPose closed/fullyOpen` | Done, device-unverified |
+| Crease-aware layout helpers | `CreaseLayout` (core), `CreaseAware.swift` (`CreaseAwareSplit`, `creaseSafePadding`) | `DevicePostureTests` (panes, nudging) | Done |
+| Dual pane (library/packs + detail/editor) on inner display | `DualPaneRootView` (`NavigationSplitView`) | Manual | Done, device-unverified |
+| StandBy / hands-free for tent & seated | `GlanceRootView.swift` | Manual: `-StikiSimulatedPose tent/seated` | Done, device-unverified |
+| Real hinge / reserved-region APIs | `HingeObserver.swift` behind `STIKI_DUO_SDK` + `#available(iOS 27.1, *)` | Requires Xcode 27.1 | Partial: not compiled here |
+| Standard iPhone unchanged | `.standardPhone` → `RootTabView` | `noHingeIsStandardPhone` | Done |
+
+See `docs/duo-flexibility.md` for API sources and assumptions.
